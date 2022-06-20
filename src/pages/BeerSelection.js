@@ -15,13 +15,11 @@ const BeerSelection = () => {
     // console.log(selection);
 
     return <section>
-        {selection.map(el =>
+        {selection.map(elt =>
             <BeerCard
-                key={el._id}
-                name={el.name}
-                id={el._id}
-                tagline={el.tagline}
-                img={el.image_url}
+                name={elt.name}
+                tagline={elt.tagline}
+                img={elt.image_url}
             />
         )}
     </section>;

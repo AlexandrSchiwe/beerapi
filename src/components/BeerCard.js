@@ -1,9 +1,8 @@
 
-
 const BeerCard = (props) => {
 
     return (
-        <div className="beer-item">
+        <div>
             <img src={props.img} alt={props.name} />
             <div>
                 <p>{props.name}</p>
